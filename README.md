@@ -5,3 +5,14 @@ Version control helps a cloud project by tracking changes, enabling collaboratio
 
 Q: Explain the difference between a Docker image and a Docker container in your own words. Suggested length: 2–3 sentences.
 A: A Docker image is a blueprint that contains everything needed to run an application, including its code, dependencies, and configuration. A Docker container is a running instance of that image, where the application actually executes. Essentially, an image is the template, while a container is the running application created from it.
+
+1. What Docker is: Docker is a platform that allows developers to package and run applications in isolated environments called containers. It helps ensure applications run consistently across different computers.
+
+2. What a Docker image is: A Docker image is a blueprint that contains everything needed to run an application, including its code, dependencies, and configuration.
+
+3. What a Docker container is: A Docker container is a running instance of a Docker image. It provides an isolated environment where the application executes.
+
+4. How to build and run an application using Docker: First, create a Dockerfile that describes how to build the application. Then, use docker build to create an image and docker run to start a container from that image.
+
+docker build -t cloud-service-demo:1.0 . 
+docker run -d --name cloud-demo-container -p 8080:80 cloud-service-demo:1.0
