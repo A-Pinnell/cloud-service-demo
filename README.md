@@ -16,3 +16,13 @@ A: A Docker image is a blueprint that contains everything needed to run an appli
 
 docker build -t cloud-service-demo:1.0 . 
 docker run -d --name cloud-demo-container -p 8080:80 cloud-service-demo:1.0
+
+Assignment 3 - Task 5
+    1. What is the difference between a Pod and a Deployment?
+    A Pod is the smallest unit in Kubernetes that runs an application or container. A Deployment manages Pods by making sure the correct number are running and replacing them if they fail.
+
+    2. What is the purpose of a Kubernetes Service?
+    A Kubernetes Service provides a consistent way to access Pods. It lets applications communicate without needing to know individual Pod IP addresses, which can change.
+
+    3. Why might a cloud application need more than one Pod?
+    A cloud application might need multiple Pods to handle more users and traffic. Multiple Pods also improve reliability because if one Pod fails, the others can keep running and serving users.
